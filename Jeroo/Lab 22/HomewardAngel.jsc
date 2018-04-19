@@ -1,0 +1,22 @@
+@Java
+
+@@
+method main()
+{
+   Jeroo angel = new Jeroo();
+   angel.hop(3);
+   angel.turn(RIGHT);
+   angel.hop(3);
+   angel.turn(LEFT);
+   angel.hop();
+   angel.pick();
+   angel.turn(RIGHT);
+   angel.hop();
+   angel.turn(LEFT);
+   angel.hop();
+   angel.toss();
+   angel.hop(4);
+   angel.turn(LEFT);
+   angel.hop(3);
+   
+}

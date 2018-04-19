@@ -1,0 +1,22 @@
+@Java
+
+@@
+//(C) A+ Computer Science
+
+method main()
+{
+  Jeroo Bobby = new Jeroo(0,0);  
+  Bobby.hop(4);
+  Bobby.pick();
+  Bobby.hop();
+  Bobby.toss();
+  Bobby.hop(5);
+  Bobby.pick();
+  Bobby.hop();
+  Bobby.toss();
+  Bobby.hop(4);
+  Bobby.pick();
+  Bobby.hop();
+  Bobby.toss();
+  Bobby.hop();
+} 
