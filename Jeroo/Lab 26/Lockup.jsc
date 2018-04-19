@@ -1,0 +1,45 @@
+@Java
+//(c) A+ Computer Science  
+
+method clearFence()
+{
+   while(!isClear(AHEAD))
+   {
+      hop();
+      pick();
+   }
+   hop();
+} 
+
+method turnCorner()
+{
+   if(isClear(AHEAD))
+   {
+      turn(RIGHT);
+   }
+}
+
+method runWest()
+{
+   
+} 
+
+
+@@
+//(c) A+ Computer Science
+
+method main()
+{
+   Jeroo sam = new Jeroo();
+   Jeroo bob = new Jeroo(10,11);
+   Jeroo jim = new Jeroo(13,12);
+   Jeroo joe = new Jeroo(15,9);
+   sam.hop(4);
+   sam.turn(RIGHT);
+   sam.hop(3);
+   sam.turn(LEFT);
+   sam.clearFence();
+   sam.turnCorner();
+   sam.hop();
+   sam.clearFence();
+} 

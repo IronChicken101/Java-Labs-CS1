@@ -1,0 +1,296 @@
+@Java
+//(c) A+ Computer Science  
+
+method spiralIn()
+{
+   while(isClear(AHEAD))
+      {
+         hop();
+      }
+   while(isWater(AHEAD))
+   {
+      turn(RIGHT);
+   }
+     while(! isWater(AHEAD))
+      {
+         hop();
+      }
+   if(isWater(AHEAD))
+   {
+      turn(RIGHT);
+   }  while(! isWater(AHEAD))
+      {
+         hop();
+      }
+   if(isWater(AHEAD))
+   {
+      turn(RIGHT);
+   }  while(! isWater(AHEAD))
+      {
+         hop();
+      }
+   if(isWater(AHEAD))
+   {
+      turn(RIGHT);
+   }  while(! isWater(AHEAD))
+      {
+         hop();
+      }
+   if(isWater(AHEAD))
+   {
+      turn(RIGHT);
+   }  while(! isWater(AHEAD))
+      {
+         hop();
+      }
+   if(isWater(AHEAD))
+   {
+      turn(RIGHT);
+   }  while(! isWater(AHEAD))
+      {
+         hop();
+      }
+   if(isWater(AHEAD))
+   {
+      turn(RIGHT);
+   }  while(! isWater(AHEAD))
+      {
+         hop();
+      }
+   if(isWater(AHEAD))
+   {
+      turn(RIGHT);
+   }  while(! isWater(AHEAD))
+      {
+         hop();
+      }
+   if(isWater(AHEAD))
+   {
+      turn(RIGHT);
+   }  while(! isWater(AHEAD))
+      {
+         hop();
+      }
+   if(isWater(AHEAD))
+   {
+      turn(RIGHT);
+   }  while(! isWater(AHEAD))
+      {
+         hop();
+      }
+   if(isWater(AHEAD))
+   {
+      turn(RIGHT);
+   }  while(! isWater(AHEAD))
+      {
+         hop();
+      }
+   if(isWater(AHEAD))
+   {
+      turn(RIGHT);
+   }  while(! isWater(AHEAD))
+      {
+         hop();
+      }
+   if(isWater(AHEAD))
+   {
+      turn(RIGHT);
+   }  while(! isWater(AHEAD))
+      {
+         hop();
+      }
+   if(isWater(AHEAD))
+   {
+      turn(RIGHT);
+   }  while(! isWater(AHEAD))
+      {
+         hop();
+      }
+   if(isWater(AHEAD))
+   {
+      turn(RIGHT);
+   }  while(! isWater(AHEAD))
+      {
+         hop();
+      }
+   if(isWater(AHEAD))
+   {
+      turn(RIGHT);
+   }  while(! isWater(AHEAD))
+      {
+         hop();
+      }
+   if(isWater(AHEAD))
+   {
+      turn(RIGHT);
+   }
+   
+} 
+
+method spiralOut()
+{
+   turn(RIGHT);
+     while(isClear(AHEAD))
+      {
+         hop();
+      }
+   if(isNet(AHEAD))
+   {
+      turn(LEFT);
+   }
+   while(isClear(AHEAD))
+      {
+         hop();
+      }
+   if(isNet(AHEAD))
+   {
+      turn(LEFT);
+   }while(isClear(AHEAD))
+      {
+         hop();
+      }
+   if(isNet(AHEAD))
+   {
+      turn(LEFT);
+   }while(isClear(AHEAD))
+      {
+         hop();
+      }
+   if(isNet(AHEAD))
+   {
+      turn(LEFT);
+   }while(isClear(AHEAD))
+      {
+         hop();
+      }
+   if(isNet(AHEAD))
+   {
+      turn(LEFT);
+   }while(isClear(AHEAD))
+      {
+         hop();
+      }
+   if(isNet(AHEAD))
+   {
+      turn(LEFT);
+   }while(isClear(AHEAD))
+      {
+         hop();
+      }
+   if(isNet(AHEAD))
+   {
+      turn(LEFT);
+   }while(isClear(AHEAD))
+      {
+         hop();
+      }
+   if(isNet(AHEAD))
+   {
+      turn(LEFT);
+   }while(isClear(AHEAD))
+      {
+         hop();
+      }
+   if(isNet(AHEAD))
+   {
+      turn(LEFT);
+   }while(isClear(AHEAD))
+      {
+         hop();
+      }
+   if(isNet(AHEAD))
+   {
+      turn(LEFT);
+   }while(isClear(AHEAD))
+      {
+         hop();
+      }
+   if(isNet(AHEAD))
+   {
+      turn(LEFT);
+   }while(isClear(AHEAD))
+      {
+         hop();
+      }
+   if(isNet(AHEAD))
+   {
+      turn(LEFT);
+   }while(isClear(AHEAD))
+      {
+         hop();
+      }
+   if(isNet(AHEAD))
+   {
+      turn(LEFT);
+   }while(isClear(AHEAD))
+      {
+         hop();
+      }
+   if(isNet(AHEAD))
+   {
+      turn(LEFT);
+   }while(isClear(AHEAD))
+      {
+         hop();
+      }
+   if(isNet(AHEAD))
+   {
+      turn(LEFT);
+   }while(isClear(AHEAD))
+      {
+         hop();
+      }
+   if(isNet(AHEAD))
+   {
+      turn(LEFT);
+   }while(isClear(AHEAD))
+      {
+         hop();
+      }
+   if(isNet(AHEAD))
+   {
+      turn(LEFT);
+   }
+   if(isWater(AHEAD))
+   {
+      turn(LEFT);
+   }
+   while(isClear(AHEAD))
+      {
+         hop();
+      }
+       if(isWater(AHEAD))
+   {
+      turn(LEFT);
+   }
+   while(isClear(AHEAD))
+      {
+         hop();
+      } if(isWater(AHEAD))
+   {
+      turn(LEFT);
+   }
+   while(isClear(AHEAD))
+      {
+         hop();
+      }
+       if(isWater(AHEAD))
+   {
+      turn(LEFT);
+   }
+   while(isClear(AHEAD))
+      {
+         hop();
+      }
+}
+
+
+@@
+//(c) A+ Computer Science
+
+method main()
+{
+   Jeroo sam = new Jeroo();
+   sam.spiralIn();
+   sam.spiralOut();
+}

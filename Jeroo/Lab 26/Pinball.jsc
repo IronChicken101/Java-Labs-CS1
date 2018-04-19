@@ -1,0 +1,80 @@
+@Java
+//(c) A+ Computer Science  
+
+method go()
+{
+   while(isClear(AHEAD))
+      {
+         hop();
+      }
+   
+   while(isFlower(AHEAD))
+      {
+         hop();
+         pick();
+      }
+    while(isClear(AHEAD))
+      {
+         hop();
+      }
+    while(isFlower(AHEAD))
+      {
+         hop();
+         pick();
+      }
+    while(isFlower(AHEAD))
+      {
+         hop();
+         pick();
+      }
+    while(isClear(AHEAD))
+      {
+         hop();
+      }
+    while(isFlower(AHEAD))
+      {
+         hop();
+         pick();
+      }
+    while(isClear(AHEAD))
+      {
+         hop();
+      }
+    while(isFlower(AHEAD))
+      {
+         hop();
+         pick();
+      }
+      
+    
+} 
+
+method  moveDownARow()
+{
+   if(!isClear(AHEAD))
+   {
+      turn(RIGHT);
+      hop();
+      turn(RIGHT);
+      
+   }
+   
+  while(isWater(AHEAD))
+  {
+     turn(LEFT);
+     hop();
+     turn(LEFT);
+  }
+}
+
+@@
+//(c) A+ Computer Science
+
+method main()
+{
+   Jeroo sam = new Jeroo();
+   sam.go();
+   sam.moveDownARow();
+   sam.go();
+   sam.moveDownARow();
+} 

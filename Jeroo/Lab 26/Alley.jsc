@@ -1,0 +1,26 @@
+@Java
+
+method findFlower()
+{
+   if(isFlower(LEFT))
+      {
+         hop();
+         pick();
+      }
+    if(isFlower(RIGHT))
+      {
+         hop();
+         pick(); 
+      }
+}
+@@
+//--- ALWAYS USE SAVE AS ---
+method main()
+{
+  Jeroo bobby = new Jeroo(1,0);  
+  bobby.findFlower();
+
+
+
+
+} //===== end of method main() =====

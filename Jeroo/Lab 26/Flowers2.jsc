@@ -1,0 +1,24 @@
+@Java
+//(c) A+ Computer Science
+
+method go()
+{
+   while(hasFlower() )
+   {
+   plant();
+   hop();
+      if(isWater(AHEAD))
+      {
+      turn(RIGHT);
+      }
+     }
+} 
+
+@@
+//(c) A+ Computer Science  
+
+method main()
+{
+   Jeroo sam = new Jeroo(96);
+   sam.go();
+} 
