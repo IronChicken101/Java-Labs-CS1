@@ -1,0 +1,67 @@
+@Java
+method plant23()
+{
+   plant();
+   hop();
+   plant();
+   hop();
+   plant();
+   hop();
+   plant();
+   hop();
+   plant();
+   hop();
+   plant();
+   hop();
+   plant();
+   hop();
+   plant();
+   hop();
+   plant();
+   hop();
+   plant();
+   hop();
+   plant();
+   hop();
+   plant();
+   hop();
+   plant();
+   hop();
+   plant();
+   hop();
+   plant();
+   hop();
+   plant();
+   hop();
+   plant();
+   hop();
+   plant();
+   hop();
+   plant();
+   hop();
+   plant();
+   hop();
+   plant();
+   hop();
+   plant();
+   hop();
+   plant();
+   hop();
+   turnAround();
+}
+
+method turnAround()
+{
+   plant();
+   turn(RIGHT);
+}
+@@
+method main()
+{
+   Jeroo bob = new Jeroo(99);
+   bob.plant23();
+   bob.plant23();
+   bob.plant23();
+   bob.plant23();
+  
+}
