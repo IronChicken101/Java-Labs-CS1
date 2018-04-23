@@ -1,0 +1,58 @@
+@Java
+method hopUntilWater()
+{
+   while (!isWater(AHEAD))
+      hop();
+}
+
+method hopUntilNet()
+{
+   while (!isNet(AHEAD))
+      hop();
+}
+
+method hopUntilFlower()
+{
+   while (!isFlower(AHEAD))
+      hop();
+}
+   
+method hopUntilOnFlower()
+{
+   while (!isFlower(HERE))
+      hop();
+}
+
+method rescuePrincess1()
+{
+  while(!isJeroo(AHEAD))
+  {
+     if (isWater(AHEAD) || isNet(AHEAD))
+        turn(RIGHT);
+     if (isFlower(AHEAD) && isClear(RIGHT))
+        turn(RIGHT);
+     
+     if (!(isWater(AHEAD) || isNet(AHEAD) || isJeroo(AHEAD)))
+        hop();
+     else if (isNet(LEFT) && isWater(AHEAD))
+     {
+        turn(RIGHT);
+        hop();
+        turn(LEFT);
+        hop(3);
+        pick();
+        toss();
+     }
+  }
+}
+   
+@@
+method main()
+{
+   Jeroo Prince = new Jeroo(1,0,EAST,2);
+   Jeroo Guide1 = new Jeroo(15,2,EAST);
+   Jeroo Guide2 = new Jeroo(11,8,SOUTH);
+   Jeroo Princess = new Jeroo(19,13,WEST);
+   
+   Prince.rescuePrincess1();
+}

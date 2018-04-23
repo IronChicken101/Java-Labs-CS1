@@ -1,0 +1,116 @@
+@Java
+method hopUntilWater()
+{
+   while (!isWater(AHEAD))
+      hop();
+}
+
+method hopUntilNet()
+{
+   while (!isNet(AHEAD))
+      hop();
+}
+
+method hopUntilFlower()
+{
+   while (!isFlower(AHEAD))
+      hop();
+}
+   
+method hopUntilOnFlower()
+{
+   while (!isFlower(HERE))
+      hop();
+}
+
+method rescuePrincess1()
+{
+  while(!isJeroo(AHEAD))
+  {
+     if (isWater(AHEAD) || isNet(AHEAD))
+        turn(RIGHT);
+     if (isFlower(AHEAD) && isClear(RIGHT))
+        turn(RIGHT);
+     
+     if (!(isWater(AHEAD) || isNet(AHEAD) || isJeroo(AHEAD)))
+        hop();
+     else if (isNet(LEFT) && isWater(AHEAD))
+     {
+        turn(RIGHT);
+        hop();
+        turn(LEFT);
+        hop(3);
+        pick();
+        toss();
+     }
+  }
+}
+   
+method rescuePrincess2()
+{
+   while (!isJeroo(AHEAD))
+   {
+      hop(2);
+      turn(RIGHT);
+      
+      hopUntilWater();
+         
+      turn(RIGHT);
+      turn(RIGHT);
+      hop();
+      turn(RIGHT);
+      
+      hopUntilNet();
+      
+      toss();
+      hop();
+      turn(LEFT);
+      
+      hopUntilWater();
+      
+      turn(LEFT);
+      hop();
+      turn(RIGHT);
+      hop(2);
+      turn(RIGHT);
+      hop();
+      turn(LEFT);
+      
+      hopUntilNet();      
+   
+      toss();
+      hop();
+   }
+}
+
+method rescuePrincess3()
+{
+   while (!isJeroo(AHEAD))
+   {
+      if (isWater(AHEAD))
+         turn(RIGHT);
+      else if (isFlower(AHEAD))
+         turn(RIGHT);
+      else if (isNet(AHEAD))
+      {
+         turn(RIGHT);
+         hop();
+         turn(LEFT);
+         pick();
+         toss();
+         hop();
+      }
+      else
+         hop();
+   }
+}
+@@
+method main()
+{
+   Jeroo Prince = new Jeroo(1,0,EAST,2);
+   Jeroo Guide1 = new Jeroo(23,7,EAST);
+   Jeroo Guide2 = new Jeroo(2,5,SOUTH);
+   Jeroo Princess = new Jeroo(3,1,SOUTH);
+
+   Prince.rescuePrincess3();
+}
