@@ -1,2 +1,2 @@
 # Java-Labs-CS1
-Labs include Practice Lab 29 : Java Output commands, Practice Lab 31: Variables Practice Lab 33: Java Input
+Finished these Labs during my Sophmore year of highschool. I had some trouble with some of these Labs and the teacher did not help so I just figured to spare you the trouble and upload all of my Labs and Projects onto here.
